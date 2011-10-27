@@ -2,7 +2,7 @@
 This plugin for [Docpad](http://github.com/balupton/docpad) provides a way to put links references into the header of a document so they can be used later inside its markdown content.
 
 #Example using a links array
----
+	---
 	layout: default
 	title: My Markdown post
 	links:
