@@ -23,4 +23,4 @@ This plugin for [Docpad](http://github.com/balupton/docpad) provides a way to pu
 
 #Install
 
-Just drop the markdownreferencelinks.plugin.coffee into the *./lib/plugins/helpers* directory of you docpad installation.
+Just drop the markdownreferencelinks directory into the *plugins* directory of you docpad project.

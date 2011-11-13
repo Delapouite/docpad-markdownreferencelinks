@@ -1,10 +1,11 @@
-DocpadPlugin = require "#{__dirname}/../../plugin.coffee"
+DocpadPlugin = require "docpad/lib/plugin.coffee"
+util = require 'bal-util'
 
 class MarkdownReferenceLinksPlugin extends DocpadPlugin
 	name: 'markdownreferencelinks'
+	priority: 800
 
-	# Parsing all files has finished
-	contextualizeFinished: ({docpad,logger,util},next) ->
+	parseAfter: ({docpad,logger},next) ->
 		documents = docpad.documents
 		logger.log 'debug', 'Generating Markdown reference links'
 
@@ -21,8 +22,8 @@ class MarkdownReferenceLinksPlugin extends DocpadPlugin
 				if document.links
 					keys = Object.keys(document.links)
 					keys.forEach (key) ->
-						document.contentSrc += '[' + key + ']: ' + document.links[key] + '\n'
-					document.save()
+						document.contentSrc += '\n' + '[' + key + ']: ' + document.links[key]
+					document.store()
 				tasks.complete()
 
 module.exports = MarkdownReferenceLinksPlugin

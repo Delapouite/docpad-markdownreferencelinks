@@ -1,0 +1,52 @@
+{
+	"name": "docpad-markdownreferencelinks",
+	"version": "0.4.2",
+	"description": "Provides a way to put markdown links references into the header of a Docpad document",
+	"homepage": "https://github.com/Delapouite/docpad-markdownreferencelinks",
+	"keywords": [
+		"docpad",
+		"markdown"
+	],
+	"author": {
+		"name": "Delapouite",
+		"email": "delapouite@gmail.com",
+		"url": "http://delapouite.com"
+	},
+	"maintainers": [
+		{
+			"name": "Delapouite",
+			"email": "delapouite@gmail.com",
+			"url": "http://delapouite.com"
+		}
+	],
+	"contributors": [
+		{
+			"name": "Delapouite",
+			"email": "delapouite@gmail.com",
+			"url": "http://delapouite.com"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/Delapouite/docpad-markdownreferencelinks/issues"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://creativecommons.org/licenses/MIT/"
+		}
+	],
+	"repository" : {
+		"type": "git",
+		"url": "https://github.com/Delapouite/docpad-markdownreferencelinks.git"
+	},
+	"dependencies": {
+		"bal-util": "0.8.x"
+	},
+	"engines" : {
+		"node": ">=0.4.0"
+	},
+	"directories": {
+		"lib": "."
+	},
+	"main": "./markdownreferencelinks.plugin.coffee"
+}
